@@ -1,0 +1,31 @@
+= Pet Clinic by darkchoco
+Ikhoon Chon <darkchoco@cloudscape.kr>
+:toc:
+
+// preamble area
+
+== To-do
+// todo: 아래 내역 확인.
+* Maven Release Plugin
+
+== 유용한 정보
+* https://islet4you.tistory.com/entry/SpringBoot-maven-plugin-not-found-%EC%8B%9C-%EC%97%90%EB%9F%AC-%EB%8C%80%EC%B2%98%EB%B2%95[SpringBoot maven-plugin not found 시 에러 대처법]
+** 플러그인 버젼을 명시해주면 된다.
+
+* https://stackoverflow.com/questions/42937577/unable-to-find-main-class-with-maven-on-spring-boot-project-in-eclipse["Unable to find main class" with Maven on spring-boot project in Eclipse]
+** 처음에는 https://stackoverflow.com/a/56535517 에 언급된, ``<configuration><skip>true...``를 사용했지만, Spring Boot 2 부터는 ``<properties>``를 사용하면 된다. (https://stackoverflow.com/a/60538075 참조)
+** 이 프로젝트에서는 ``main`` 클래스가 없는 package 의 pom.xml 에 설정하였다.
+
+== 참고 (알파벳 순)
+
+=== Build & Packaging
+* https://www.baeldung.com/spring-boot-repackage-vs-mvn-package[Difference Between spring-boot:repackage and Maven package]
+** 'Fat jar'를 만들어주는 ``repackage``이란 goal을 Spring Boot Maven Plugin이 제공해준다는 것이 포인트.
+* https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/#using[Spring Boot Maven Plugin Documentation - Using the Plugin]
+
+=== Logging
+* https://mkyong.com/spring-boot/spring-boot-slf4j-logging-example/[Spring Boot SLF4j Logback example]
+
+=== Lombok
+* https://projectlombok.org/features/all[Lombok features]
+* https://beomseok95.tistory.com/242[Lombok 알아보기]

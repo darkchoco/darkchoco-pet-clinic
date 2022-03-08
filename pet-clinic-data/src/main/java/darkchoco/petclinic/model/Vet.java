@@ -1,0 +1,4 @@
+package darkchoco.petclinic.model;
+
+public class Vet extends Person {
+}

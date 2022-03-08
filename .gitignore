@@ -34,3 +34,4 @@ target/
 *.rar
 
 # etc.
+README.template.adoc
